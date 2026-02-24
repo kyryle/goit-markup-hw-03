@@ -9,26 +9,27 @@ body {
     font-weight: normal;
 }
 h1 {
+    margin: 0;
     font-size: 56px;
     letter-spacing: 0.02em;
     font-weight: 700;
     line-height: 1.07;
     text-align: center;
-    margin: 0;
     max-width: 498px;
     margin-bottom: 48px;
 }
 
 h2 {
+    margin: 0;
     font-size: 36px;
     letter-spacing: 0.02em;
     font-weight: 700;
     line-height: 1.11111;
     color: #2E2F42;
-    margin: 0;
 }
 
 h3 {
+    margin: 0;
     font-size: 20px;
     letter-spacing: 0.02em;
     font-weight: 500;
@@ -88,14 +89,28 @@ img {
 header {
     border-bottom: 1px solid #e7e9fc;
 }
+address {
+    font-style: normal;
+}
+.container-header {
+    display: flex;
+        max-width: 1158px;
+            padding-left: 15px;
+            padding-right: 15px;
+            margin-left: auto;
+            margin-right: auto;
+}
+.flex-header {
+    display: flex;
+    gap: 40px;
+    margin: 24px 24px;
+}
 .contacts {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    display: flex;
     gap: 40px;
-    margin: 50px 0;
 }
 .contacts a:hover,
 .contacts a:focus {
@@ -107,18 +122,12 @@ header {
 }
 .address {
     text-decoration: none;
-    font-style: normal;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     font-weight: 400;
     color: #434455;
-    display: flex;
     gap: 40px;
-    flex-direction: row;
-}
-.nav-link {
-    padding: 24px 0;
 }
 .address:hover,
 .address:focus {
@@ -134,6 +143,7 @@ header {
     font-size: 18px;
     letter-spacing: 0.03em;
     line-height: 1.16667;
+    margin: 24px 24px;
 }
 .span-header {
     color: #4d5ae5;
@@ -173,10 +183,12 @@ header {
 .features {
     text-align: left;
 }
+.li-features {
+    flex-basis: calc((100% - 24px)/1);
+}
 .flex-features {
     display: flex;
     gap: 24px;
-    flex-basis: calc((100% - 24px)/4);
 }
 /* #endregion */
 /* #region hero */
@@ -185,18 +197,22 @@ header {
 }
 .team-image {
     background-color: #FFFFFF;
-    padding: 32px 16px;
-    max-width: calc((100% - 32px)/ 3);
+    max-width: calc((100% - 32px)/ 4);
     border-radius: 0 0 4px 4px;
 }
 .team {
     text-align: center;
+    margin-bottom: 72px;
 }
 .flex-team {
     display: flex;
     gap: 24px;
     justify-content: center;
     align-items: center;
+    margin-top: 72px;
+}
+.team-wrap {
+    padding: 32px 16px;
 }
 /* #endregion */
 /* #region portfolio */
@@ -206,18 +222,22 @@ header {
 .flex-portfolio {
     display: flex;
     gap: 24px;
+    row-gap: 48px;
     justify-content: flex-start;
     flex-wrap: wrap;
     flex-basis: calc((100% - 24px) / 2)
 }
-.border-bottom {
+.portfolio-wrap {
+    padding: 32px 16px;
     border-bottom: 1px solid #e7e9fc;
+    border-top: none;
 }
 /* #endregion */
 /* #region fotter */
 .footer-p {
     color: #F4F4FD;
     margin-top: 16px;
+    max-width: 264px;
 }
 
 footer {
