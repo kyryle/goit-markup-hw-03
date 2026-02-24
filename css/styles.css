@@ -14,7 +14,9 @@ h1 {
     font-weight: 700;
     line-height: 1.07;
     text-align: center;
-    ;
+    margin: 0;
+    max-width: 498px;
+    margin-bottom: 48px;
 }
 
 h2 {
@@ -23,6 +25,7 @@ h2 {
     font-weight: 700;
     line-height: 1.11111;
     color: #2E2F42;
+    margin: 0;
 }
 
 h3 {
@@ -31,6 +34,7 @@ h3 {
     font-weight: 500;
     line-height: 1.2;
     color: #2E2F42;
+    margin-bottom: 8px;
 }
 
 a {
@@ -47,9 +51,12 @@ p {
     letter-spacing: 0.02em;
     line-height: 1.5;
     color: #434455;
+    margin: 0;
 }
 ul {
     list-style-type: none;
+    margin: 0;
+    padding-left: 0;
 }
 .container {
     max-width: 1158px;
@@ -57,7 +64,6 @@ ul {
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
-    justify-content: center;
 }
 img {
     display: block;
@@ -80,15 +86,17 @@ img {
 /* #endregion */
 /* #region Header */
 header {
-    border: 1px solid #2E2F42;
+    border-bottom: 1px solid #e7e9fc;
 }
 .contacts {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    display: flex;
+    gap: 40px;
+    margin: 50px 0;
 }
-
 .contacts a:hover,
 .contacts a:focus {
     color: #404BBF;
@@ -105,8 +113,13 @@ header {
     letter-spacing: 0.02em;
     font-weight: 400;
     color: #434455;
+    display: flex;
+    gap: 40px;
+    flex-direction: row;
 }
-
+.nav-link {
+    padding: 24px 0;
+}
 .address:hover,
 .address:focus {
     color: #404BBF;
@@ -130,6 +143,7 @@ header {
 .page-title {
     background-color: #2E2F42;
     color:#FFFFFF;
+    padding: 188px 0;
 }
 .button {
     background-color: #4D5AE5;
@@ -148,6 +162,7 @@ header {
     padding: 16px 32px;
     margin-left: auto;
     margin-right: auto;
+    border: none;
 }
 .button:hover,
 .button:focus {
@@ -160,7 +175,8 @@ header {
 }
 .flex-features {
     display: flex;
-    gap: 8px;
+    gap: 24px;
+    flex-basis: calc((100% - 24px)/4);
 }
 /* #endregion */
 /* #region hero */
@@ -169,13 +185,16 @@ header {
 }
 .team-image {
     background-color: #FFFFFF;
+    padding: 32px 16px;
+    max-width: calc((100% - 32px)/ 3);
+    border-radius: 0 0 4px 4px;
 }
 .team {
     text-align: center;
 }
 .flex-team {
     display: flex;
-    gap: 32px;
+    gap: 24px;
     justify-content: center;
     align-items: center;
 }
@@ -189,7 +208,7 @@ header {
     gap: 24px;
     justify-content: flex-start;
     flex-wrap: wrap;
-    width: calc((100% - 24px) / 2)
+    flex-basis: calc((100% - 24px) / 2)
 }
 .border-bottom {
     border-bottom: 1px solid #e7e9fc;
@@ -198,11 +217,13 @@ header {
 /* #region fotter */
 .footer-p {
     color: #F4F4FD;
+    margin-top: 16px;
 }
 
 footer {
     background-color: #2E2F42;
     color: #FFFFFF;
+    padding: 100px 0;
 }
 
 .logo-footer {
