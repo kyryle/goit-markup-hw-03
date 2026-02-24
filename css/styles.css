@@ -93,7 +93,8 @@ header {
 }
 address {
     font-style: normal;
-    margin: 24px 24px 24px auto;
+    margin: 0 24px 24px auto;
+    padding-top: 24px;
 }
 .container-header {
     display: flex;
@@ -101,7 +102,8 @@ address {
 .flex-header {
     display: flex;
     gap: 40px;
-    margin: 24px 24px;
+    margin: 0 24px 24px 24px;
+    padding-top: 24px;
 }
 .contacts {
     font-weight: 500;
@@ -134,7 +136,6 @@ address {
     color: #404BBF;
 }
 .logo-header {
-
     color: #2E2F42;
     font-family: "Raleway", sans-serif;
     text-decoration: none;
@@ -143,8 +144,8 @@ address {
     font-size: 18px;
     letter-spacing: 0.03em;
     line-height: 1.16667;
-    margin: 24px 24px;
-    padding: 0 76px 0 0;
+    margin: 0 24px 24px 24px;
+    padding: 24px 76px 0 0;
 }
 .span-header {
     color: #4d5ae5;
@@ -208,9 +209,12 @@ address {
     max-width: calc((100% - 3 * 24px)/ 4);
     border-radius: 0 0 4px 4px;
 }
-.team {
+.team-title {
     text-align: center;
     margin-bottom: 72px;
+}
+.team {
+        text-align: center;
 }
 .flex-team {
     display: flex;
@@ -264,6 +268,7 @@ footer {
     font-size: 18px;
     letter-spacing: 0.03em;
     line-height: 1.16667;
+    padding: 0;
 }
 
 .span-footer {
