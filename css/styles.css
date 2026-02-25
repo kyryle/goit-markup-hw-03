@@ -68,6 +68,7 @@ ul {
 }
 img {
     display: block;
+    max-width: 100%;
 }
 .section {
     padding: 120px 0;
